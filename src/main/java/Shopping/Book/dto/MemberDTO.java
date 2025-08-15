@@ -1,5 +1,6 @@
 package Shopping.Book.dto;
 
+import Shopping.Book.constant.RoleType;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
@@ -36,6 +37,8 @@ public class MemberDTO {
 
     @NotBlank(message = "주소는 필수입니다.")
     private String memberAddress;
+
+    private RoleType roleType;
 
     // 등록일
     private LocalDateTime regDate;
